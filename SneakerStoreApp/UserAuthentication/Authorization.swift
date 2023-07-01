@@ -122,6 +122,8 @@ class Authorization: UIViewController, UITextFieldDelegate {
         appDelegate?.appState = .signedIn
     }
     
+    
+    // Try to reuse this logic, cause it's repeating in several places, for example: Registration Page
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 1

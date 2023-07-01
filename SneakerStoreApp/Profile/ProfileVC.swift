@@ -7,6 +7,6 @@
 
 import UIKit
 
-class ProfileVC: UIViewController {
+class ProfileVC: UIViewController { // do we need this class ?
 }
 

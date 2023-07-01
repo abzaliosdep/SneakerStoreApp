@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CartVC: UIViewController {
+class CartVC: UIViewController { // your cleanest class haha
     
     private var cartItems = [Shoes]() {
         didSet {
