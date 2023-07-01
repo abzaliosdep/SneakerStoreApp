@@ -8,6 +8,7 @@
 import UIKit
 
 class MainTabBarVC: UITabBarController {
+    // try not to use Singleton for initiating tabbar, bad DI and testing as a result, better to use some kinf of factory for initiating this class
     static let shared = MainTabBarVC()
     
 
@@ -21,7 +22,7 @@ class MainTabBarVC: UITabBarController {
         tabBar.barTintColor = .white
         setupTabBar()
     }
-    func setupTabBar() {
+    func setupTabBar() { // try yo leave some spaces between your functions haha
         let catalogViewController = UINavigationController(rootViewController: CatalogViewController())
         catalogViewController.tabBarItem.image = UIImage(named: "Vector1")
         catalogViewController.tabBarItem.selectedImage = UIImage(named: "Vector1.1")
@@ -45,6 +46,7 @@ class MainTabBarVC: UITabBarController {
 
     }
      
+    // use call to action for naming your functions and correct names, on this case it's labels, so result will be something like makeLabels
     func lables(text: String) -> String {
         let lable = UILabel()
         lable.text = text

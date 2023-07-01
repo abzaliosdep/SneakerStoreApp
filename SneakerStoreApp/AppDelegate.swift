@@ -34,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
+        
+        // Better to name all your entities with one name styling, ex: OnboardingViewController, SignInViewController, FeedViewController or OnboardingScreen, SignInScreen, FeedScreen and e.t.c. You have FirstOnboarding, MainTabBarVC and WelcomePage
         switch appState {
         case .firstLaunch:
             self.window?.rootViewController = UINavigationController(rootViewController: FirstOnboarding())

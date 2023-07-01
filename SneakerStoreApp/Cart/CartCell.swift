@@ -109,7 +109,7 @@ extension CartCell: CartCellButtonViewDelegate {
     
     func didPlusButtonTapped() {
         guard let cartItem = cartItem else { return }
-        cartItem.quantity! += 1
+        cartItem.quantity! += 1 // you already checked that it's not an optional above so no need for using forceunwrapping here
         self.cartItem = cartItem
     }
     

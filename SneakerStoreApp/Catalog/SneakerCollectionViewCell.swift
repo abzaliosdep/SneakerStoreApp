@@ -37,7 +37,7 @@ class SneakerCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private let shoesImageView = CustomImageView()
+    private let shoesImageView = CustomImageView() // try to use one folder styling, for instance: firslty variables and the outlets, for now they are all mixed
     
     private let cellButton = CustomButton(type: .addToCart)
     
@@ -123,7 +123,7 @@ class SneakerCollectionViewCell: UICollectionViewCell {
     }
 }
 
-class Shoes {
+class Shoes { // better to use struct for models, also naming it just Show will be better option, cause inside of it you are describing one shoe not shoes
     
     private var id: String
     public var image: UIImage
@@ -147,7 +147,7 @@ class Shoes {
 
 extension SneakerCollectionViewCell {
     
-    @objc public func handleButtonAction() {
+    @objc public func handleButtonAction() { // is there any need for extracting function to extension ?
         if let isAddedToCart = self.isAddedToCart {
             guard let shoes = self.shoes else { return }
             switch isAddedToCart {

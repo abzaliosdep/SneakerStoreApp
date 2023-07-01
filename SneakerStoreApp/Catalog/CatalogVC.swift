@@ -28,7 +28,7 @@ class CatalogViewController: UIViewController {
             return label
         }()
         
-        override func viewDidLoad() {
+        override func viewDidLoad() { // what happened with pagination and spacing haha
             super.viewDidLoad()
             
             collectionView.dataSource = self
@@ -83,7 +83,7 @@ extension CatalogViewController: UICollectionViewDataSource {
     }
 }
 
-extension CatalogViewController: UICollectionViewDelegate { }
+extension CatalogViewController: UICollectionViewDelegate { } // What we are doing there?) if it's not needed it's better to delete it 
 
 extension CatalogViewController: UICollectionViewDelegateFlowLayout {
     

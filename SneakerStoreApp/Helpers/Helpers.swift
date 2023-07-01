@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PaddedTextField: UITextField {
+class PaddedTextField: UITextField { // better to  creat different files, example: PaddedTextField and everything regarding it will be inside and another file for  ShoesService and so on ...
     let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {

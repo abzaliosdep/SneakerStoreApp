@@ -129,6 +129,8 @@ class Registration: UIViewController, UITextFieldDelegate {
         navigationController?.popViewController(animated: true)
     }
     
+    
+    // Name your functions with call to action, ex: makeTransition
     private func transition() {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
 

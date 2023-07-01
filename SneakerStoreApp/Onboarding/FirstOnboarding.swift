@@ -89,6 +89,13 @@ class FirstOnboarding: UIViewController {
         return button
     }()
     
+    // Use one folder styling for your files, it's easier to read and add new changes, ex:
+    // Variables
+    // Outlets
+    // LifeCycle: ViewDidLoad, LaodView and e.t.c
+    // Public functions
+    // Actions
+    // Private methods
     @objc private func buttonDidPress() {
         print("Button was pressed!")
         navigationController?.isNavigationBarHidden = true
@@ -142,6 +149,8 @@ class FirstOnboarding: UIViewController {
             grayCicle2.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 24)
         ])
         
+        
+        // For future, try to divide logic inside of your viewDidLoad, for instance use different functions for constraints layout and adding actions and then call them from your lifecycle method
         button.addTarget(self, action: #selector(buttonDidPress), for: .touchUpInside)
     }
 }
